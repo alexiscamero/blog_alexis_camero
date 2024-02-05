@@ -1,0 +1,244 @@
+  #barranav {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background: linear-gradient(to right, #f6d1f6, #5cf694);
+
+}
+
+#caja {
+  margin-top: 7%;
+}
+
+#logo_p img {
+  width: 60%;
+}
+
+#logo {
+  width: 100%;
+  height: 10%;
+
+}
+
+#logo img {
+  width: 80%;
+}
+
+#myNavbar {
+  margin-top: 4%;
+}
+
+#login {
+  margin-top: 2.5%;
+}
+
+#col1 {
+  background-color: aqua;
+}
+
+#col2 {
+
+  background-color: aquamarine;
+}
+
+#col3 {
+
+  background-color: aqua;
+}
+
+#izquierdo {
+  margin-top: 5%;
+}
+
+#izquierdo a {
+  font-family: Arial, sans-serif;
+  font-size: 1.6rem;
+  color: grey;
+  text-decoration: none;
+  transition: color 0.3s;
+
+
+}
+
+#izquierdo a:hover {
+  color: rgb(45, 206, 64);
+}
+
+
+#derecho {
+  margin-top: 5%;
+}
+
+#caja {
+  border-bottom: solid 1px rgba(211, 211, 211, 0.678);
+}
+
+#central {
+  margin-top: 3rem;
+  padding-bottom: 5%;
+  background-color: white;
+  border-left: solid 1px rgba(211, 211, 211, 0.678);
+  border-right: solid 1px rgba(211, 211, 211, 0.678);
+  max-height: 70rem;
+  overflow: auto;
+}
+
+#central h1 {
+  font-size: 3rem;
+}
+
+#central p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+
+.logo-small {
+  color: #00ffc3;
+  font-size: 3rem;
+}
+
+footer p{
+  color: black;
+  margin-top: 1%;
+}
+
+.well {
+  margin: 0 auto; 
+  text-align: center;
+  overflow: hidden; 
+}
+
+.well img {
+  max-width: 90%; 
+  height: auto; 
+}
+
+#formulario {
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+#lista-txto {
+  font-size: 1.6rem;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.anima {
+  animation-name: slide;
+  animation-duration: 1s;
+}
+
+.redes {
+  display: inline-flex;
+}
+
+.redes img {
+ max-width: 3rem;
+}
+
+#categorias {
+  margin-top: 2%;
+  max-width: 100%;
+  font-size: 1.6rem;
+}
+
+.panel-body {
+  text-align: center;
+ 
+}
+
+.codigo {
+  text-align: left;
+  font-size: 1.6rem;
+}
+
+.text-center {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+#ofrecemos p {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+
+  #myNavbar.collapse {
+    display: block;
+  }
+
+  #barranav {
+    position: absolute;
+  }
+
+  #contenedor_logo {
+    align-items: center;
+  }
+
+  #logo_p img {
+    max-width: 23%;
+    height: auto;
+  }
+  
+
+  #logo {
+    width: 20%;
+
+  }
+
+
+  #central{
+    margin-top: 6rem;
+    width: 100%;
+    overflow: auto;
+  }
+  
+
+  #formulario {
+    margin-top: 5%;
+  }
+
+  #izquierdo {
+    margin-top: 70%;
+  }
+
+  .well {
+    margin: 0 auto; 
+    text-align: center;
+    overflow: hidden; 
+  }
+
+  .well img {
+   width: 60%; 
+    height: 50%; 
+  
+  }
+
+  .redes {
+    display: inline;
+  }
+  
+  .redes img {
+   max-width: 4rem;
+  }
+
+  .codigo {
+    text-align: left;
+    font-size: 1.2rem;
+  }
+
+}
+

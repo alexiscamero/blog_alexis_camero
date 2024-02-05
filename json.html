@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>BLOG DE ALEXIS CAMERO</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel=StyleSheet href="style.css" type="text/css" media=screen>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default" id="barranav">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html" id="logo_p"><img src="imagen/logo2.png" alt="Logo"></a>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-7">
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span>
+                                    Home</a></li>
+                            <li><a href="xml.html">XML</a></li>
+                            <li><a href="json.html">JSON</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-3" id="login">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="contacto.html"><span class="glyphicon glyphicon-phone"></span> contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </nav>
+
+    <div class="container-fluid" id="contenido">
+        <div class="row content" id="caja">
+            <div class="col-sm-2 sidenav" id="izquierdo">
+                <p><a href="categorias.html">Categorías</a></p><br>
+                <p><a href="ultimos.html">Últimos post</a></p><br>
+                <h4>Siguenos en redes sociales</h4><br>
+                <div class="redes">
+                    <div><a class="navbar-brand" href="https://www.facebook.com/?locale=es_ES" id="logo"><img
+                                src="imagen/facebook.png" alt="Logo"></a></div>
+                    <div><a class="navbar-brand" href="https://www.tiktok.com/es/" id="logo"><img
+                                src="imagen/tik-tok.png" alt="Logo"></a></div>
+                    <div><a class="navbar-brand" href="https://www.instagram.com/" id="logo"><img
+                                src="imagen/instagram.png" alt="Logo"></a></div>
+                </div>
+            </div>
+            <div class="col-sm-8" id="central">
+                <div class="container-fluid"><br>
+                    <div class="container-fluid text-left">
+                        <br>
+                        <!-- JSON -->
+                        <h1>JSON (JavaScript Object Notation): </h1><br>
+
+                        <!-- Historia de JSON -->
+                        <h3>Historia de JSON:</h3><br>
+                        <p>
+                            JSON es un formato de intercambio de datos ligero que se utiliza para la comunicación entre
+                            sitios web y servidores. Está basado en un subconjunto del lenguaje de programación
+                            JavaScript y se utiliza comúnmente para transmitir datos en aplicaciones web.
+                        </p>
+
+                        <p>
+                            La historia de JSON se remonta a principios de la década de 2000, cuando se desarrolló como
+                            una alternativa a XML (eXtensible Markup Language) para el intercambio de datos entre
+                            sistemas. Antes de JSON, XML era el formato de intercambio de datos más utilizado, pero se
+                            consideraba engorroso y difícil de analizar. JSON, por otro lado, fue diseñado para ser
+                            fácil de leer y escribir, lo que lo convierte en una opción más atractiva para los
+                            desarrolladores.
+                        </p>
+
+                        <p>
+                            Una de las principales razones por las que JSON se convirtió en el formato predominante en
+                            el mundo del intercambio de datos es su simplicidad. Está basado en un subconjunto de
+                            JavaScript, lo que significa que es familiar para la mayoría de los desarrolladores. Además,
+                            es un formato de texto, lo que significa que puede ser fácilmente leído y escrito tanto por
+                            humanos como por máquinas.
+                        </p>
+
+                        <p>
+                            JSON es un subconjunto de JavaScript, esto significa que se adhiere a las reglas de sintaxis
+                            de JavaScript, pero es aún más estricto en cómo debe ser formateado. Es un formato
+                            independiente que se puede utilizar con cualquier lenguaje de programación, no solo con
+                            JavaScript. Sin embargo, dado que está basado en JavaScript, es fácil convertir datos JSON
+                            en objetos JavaScript y viceversa. Esto lo convierte en una opción conveniente para
+                            transmitir datos en aplicaciones web, donde los datos a menudo se utilizan en el código
+                            JavaScript.
+                        </p>
+
+                        <p>
+                            JSON también es un formato para almacenar datos en formato de archivo. A menudo se utiliza
+                            para almacenar datos de configuración, ajustes de aplicaciones y otros tipos de datos que
+                            deben almacenarse en un formato legible por máquinas.
+                        </p>
+
+
+                        <!-- Normas de Uso -->
+                        <h3>Normas de Uso y Sintaxis:<h3><br>
+                                <p>
+                                    Los archivos en formato JSON tienen las mismas reglas de sintaxis del lenguaje
+                                    Javascript. Pero además necesitan cumplir algunas normas adicionales, que no son
+                                    necesarias en los literales de objeto Javascript:
+                                </p>
+
+                                <p>
+                                    En JSON podemos estructurar los datos de dos maneras distintas, como arrays y
+                                    objetos. Todos los archivos de JSON representan una de estas dos estructuras:
+                                </p>
+
+                                <p>
+                                    On objeto, es decir, una lista de pares clave / valor.
+                                    Una colección de elementos, lo que se conoce como array o arreglo.
+                                    Esto quiere decir que no puedes poner un valor primitivo (números, cadenas,
+                                    boleanos) tal cual como un JSON válido, sino que tendrá que estar dentro de una
+                                    estructura permitida, como un objeto o un array.
+                                </p><br>
+
+                                <pre class="codigo"><code>
+{
+    "id": 44,
+    "game": "Colonos de Catan",
+    "author": "Klaus Teuber",
+    "ages": "10+"
+}
+                            </code></pre><br>
+
+                                <p>
+                                    Los archivos JSON que representan objetos comienzan siempre con una llave de inicio
+                                    { y acaban con la llave de cierre }.
+                                </p><br>
+
+                                <pre class="codigo"><code>
+[
+    {
+        "id": 56431,
+        "name": "El Padrino",
+        "year": 1972
+    },
+     {
+        "id": 7553,
+        "name": "El Padrino 2",
+        "year": 1974
+    },
+    {
+        "id": 19563,
+        "name": "El Padrino III",
+        "year": 1990
+    }
+]
+                            </code></pre><br>
+
+                                <p>
+                                    Los archivos JSON que representan una lista de valores, es decir, un arreglo,
+                                    comienzan por [ y terminan por ].
+                                </p><br>
+
+                                <pre class="codigo"><code>
+[ 1, 2, 8 ]
+                            </code></pre><br>
+
+                                <p>
+                                    El anterior array es un JSON válido, pero es más común el uso de valores complejos
+                                    en las casillas del array. De hecho, dentro de una casilla podríamos tener cualquier
+                                    otro valor JSON válido, incluso otros objetos complejos.
+                                </p><br>
+
+                                <pre class="codigo"><code>
+{
+    "id": 1,
+    "name": "Patatas nuevas",
+    "description": "Patatas cosechadas este año",
+    "available": true
+}
+                            </code></pre><br>
+
+                                <p>
+                                    Todos los valores que podemos encontrar en JSON representan una de estas
+                                    posibilidades:
+                                </p><br>
+
+                                <p>
+                                <ul id="lista-txto">
+                                    <li>Un valor primitivo, que pueden ser de tipos diversos de Javascript, numérico,
+                                        cadena de caracteres, y boleanos (true / false).</li><br>
+                                    <li>Arrays, es decir, una secuencia de valores separados por comas. En los arrays
+                                        utilizamos los corchetes para delimitar el principio y fin de los valores que
+                                        contienen.</li><br>
+                                    <li>Objetos, es decir, otros elementos JSON con pares clave / valor.</li><br>
+                                    <li>Además, también es válido el valor null.</li><br>
+                                </ul>
+                                </p><br>
+
+                                <p>
+                                    Se deben usar siempre comillas dobles a la hora de encerrar cadenas y nombres de los
+                                    atributos del objeto.
+                                </p><br>
+
+                                <pre class="codigo"><code>
+{
+    "id": 1,
+    "name": "Patatas nuevas",
+    "description": "Patatas cosechadas este año",
+    "available": true
+}
+                            </code></pre><br>
+
+                                <p>
+                                    Este punto es importante, porque la sintaxis de Javascript para los literales de
+                                    objetos permite colocar los nombres de las propiedades con y sin comillas, mientras
+                                    que en JSON estamos obligados a colocar los nombres de las propiedades siempre con
+                                    comillas dobles.
+                                </p>
+
+                                <p>
+                                    Cada elemento del objeto JSON se separa del siguiente con una coma (,). Pero no debe
+                                    haber una coma después del último elemento en ningún caso (Javascript sí que la
+                                    permitiría).
+                                </p>
+
+                                <p>
+                                    Todos los archivos con código JSON deben estar codificados con UTF-8 de manera
+                                    obligatoria. El archivo transferido en un JSON debe ser necesariamente codificado
+                                    como UTF8 para que no haya problemas de visualización de los caracteres contenidos
+                                    en él.
+                                </p><br>
+                                <h3>Aplicaciones en el Ámbito Empresarial:</h3><br>
+                                <p>En el vertiginoso mundo empresarial actual, la eficiencia y la claridad en el manejo
+                                    de datos son fundamentales para el éxito. En este contexto, JSON (JavaScript Object
+                                    Notation) ha emergido como una herramienta invaluable, facilitando el intercambio de
+                                    información entre sistemas de manera eficiente y legible.</p>
+
+                                <p>En primer lugar, JSON se ha convertido en el lenguaje común para la comunicación
+                                    entre aplicaciones en el ámbito empresarial. Su sintaxis sencilla y estructurada en
+                                    pares clave-valor lo hace ideal para representar datos complejos de manera concisa.
+                                    En lugar de depender de formatos más verbosos como XML, las empresas han adoptado
+                                    ampliamente JSON debido a su capacidad para transmitir datos de manera eficiente,
+                                    reduciendo la carga en las redes y mejorando la velocidad de transferencia.</p>
+
+                                <p>Un aspecto clave de la aplicación de JSON en el entorno empresarial es su
+                                    interoperabilidad. JSON no está vinculado a un lenguaje de programación específico,
+                                    lo que significa que puede ser utilizado sin problemas en una variedad de
+                                    plataformas y tecnologías. Esta versatilidad lo convierte en una elección lógica
+                                    para entornos empresariales que suelen utilizar una amplia gama de tecnologías y
+                                    sistemas.</p>
+
+                                <p>La legibilidad de JSON también juega un papel crucial en el manejo de datos
+                                    empresariales. Al ser fácilmente comprensible tanto para los desarrolladores como
+                                    para los no desarrolladores, JSON simplifica la colaboración entre equipos
+                                    multidisciplinarios. Los datos presentados en formato JSON son accesibles y pueden
+                                    ser interpretados rápidamente, facilitando la toma de decisiones informadas y la
+                                    resolución de problemas.</p>
+
+                                <p>En el ámbito empresarial, la agilidad es esencial, y JSON se destaca al permitir la
+                                    fácil adaptación a los cambios en los requisitos y en la estructura de datos. Su
+                                    capacidad para representar datos de manera flexible, ya sea en forma de objetos o
+                                    arrays, brinda a las empresas la libertad de ajustar y expandir sus sistemas sin
+                                    comprometer la integridad de los datos existentes.</p>
+
+                                <p>La aplicación de JSON se extiende más allá de la mera transmisión de datos. En el
+                                    desarrollo de aplicaciones web empresariales, JSON se utiliza comúnmente para la
+                                    manipulación de datos en el lado del cliente. La capacidad de transformar fácilmente
+                                    objetos JSON en objetos JavaScript proporciona una integración fluida entre el
+                                    servidor y el navegador, mejorando la eficiencia y la capacidad de respuesta de las
+                                    aplicaciones web empresariales.</p>
+
+                                <p>Otro beneficio destacado de JSON en el ámbito empresarial es su utilidad en el
+                                    almacenamiento de configuraciones y preferencias. Muchas aplicaciones empresariales
+                                    utilizan archivos de configuración en formato JSON para gestionar ajustes
+                                    específicos del usuario, lo que simplifica la personalización y la administración de
+                                    perfiles.</p>
+
+                                <p>A pesar de sus numerosos beneficios, es esencial abordar algunos desafíos asociados
+                                    con JSON en el ámbito empresarial. Uno de estos desafíos radica en la necesidad de
+                                    garantizar la seguridad de los datos. A medida que las empresas intercambian
+                                    información crucial, implementar prácticas de seguridad sólidas, como la
+                                    encriptación, se vuelve fundamental.</p>
+
+                                <p>En conclusión, la aplicación de JSON en el ámbito empresarial ha transformado la
+                                    forma en que las empresas manejan, intercambian y comprenden datos. Su sintaxis
+                                    sencilla, interoperabilidad, legibilidad y versatilidad hacen de JSON una
+                                    herramienta valiosa para optimizar procesos y mejorar la eficiencia en el entorno
+                                    empresarial. Al adoptar JSON, las empresas pueden avanzar hacia una gestión de datos
+                                    más eficaz y ágil, allanando el camino hacia el éxito en la era digital.</p>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-sm-2 sidenav" id="derecho">
+                <div class="well">
+                    <img width="180" height="100" src="imagen/video5.gif" alt="promo">
+                    <p class="text-center">Anuncia con nosotros</p>
+                </div>
+                <br><br>
+                <div class="well">
+                    <img width="180" height="100" src="imagen/video6.gif" alt="promo">
+                    <p class="text-center">Anuncia con nosotros</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="container-fluid text-center">
+        <p>Todos los derechos reservados del autor @Camero</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BLOG DE ALEXIS CAMERO</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel=StyleSheet href="style.css" type="text/css" media=screen>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default" id="barranav">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-2">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html" id="logo_p"><img src="imagen/logo2.png" alt="Logo"></a>
+
+                    </div>
+                </div>
+
+                <div class="col-sm-7">
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span>
+                                    Home</a></li>
+                            <li><a href="xml.html">XML</a></li>
+                            <li><a href="json.html">JSON</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-3" id="login">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="contacto.html"><span class="glyphicon glyphicon-phone"></span> contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </nav>
+
+    <div class="container-fluid" id="contenido">
+        <div class="row content" id="caja">
+            <div class="col-sm-2 sidenav" id="izquierdo">
+            </div>
+            <div class="col-sm-8" id="formulario">
+                <div class="container-fluid">
+                    <h2>Formulario de Contacto</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="nombres">Nombres:</label>
+                            <input type="text" class="form-control" id="nombres" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="apellidos">Apellidos:</label>
+                            <input type="text" class="form-control" id="apellidos" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="correo">Correo electrónico:</label>
+                            <input type="email" class="form-control" id="correo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-sm-2 sidenav" id="derecho">
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="container-fluid text-center">
+        <p>Todos los derechos reservados del autor @Camero</p>
+    </footer>
+
+</body>
+
+</html>

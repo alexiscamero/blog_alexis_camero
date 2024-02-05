@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>BLOG DE ALEXIS CAMERO</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel=StyleSheet href="style.css" type="text/css" media=screen>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-default" id="barranav">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-2">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html" id="logo_p"><img src="imagen/logo2.png" alt="Logo"></a>
+
+          </div>
+        </div>
+
+        <div class="col-sm-7">
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span>
+                  Home</a></li>
+              <li><a href="xml.html">XML</a></li>
+              <li><a href="json.html">JSON</a></li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="col-sm-3" id="login">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="contacto.html"><span class="glyphicon glyphicon-phone"></span> contacto</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+    </div>
+  </nav>
+
+  <div class="container-fluid" id="contenido">
+    <div class="row content" id="caja">
+      <div class="col-sm-2 sidenav" id="izquierdo">
+        <p><a href="categorias.html">Categorías</a></p><br>
+        <p><a href="ultimos.html">Últimos post</a></p><br>
+        <h4>Siguenos en redes sociales</h4><br>
+        <div class="redes">
+          <div><a class="navbar-brand" href="https://www.facebook.com/?locale=es_ES" id="logo"><img
+                src="imagen/facebook.png" alt="Logo"></a></div>
+          <div><a class="navbar-brand" href="https://www.tiktok.com/es/" id="logo"><img src="imagen/tik-tok.png"
+                alt="Logo"></a></div>
+          <div><a class="navbar-brand" href="https://www.instagram.com/" id="logo"><img src="imagen/instagram.png"
+                alt="Logo"></a></div>
+        </div>
+      </div>
+      <div class="col-sm-8" id="central">
+        <div class="container-fluid"><br>
+          <div class="container-fluid text-left">
+            <br>
+            <!-- XML -->
+            <h1>XML (eXtensible Markup Language): </h1><br>
+
+            <!-- Historia de XML -->
+            <h3>Historia de XML:</h3><br>
+            <p>Los primeros lenguajes de marcas se idearon a finales de los 60 para la preparación de documentos de
+              texto
+              (William W. Tunnicliffe, 1967). En los años 70 se crearon varias normas de lenguajes de marcas (GenCode,
+              GML) para
+              su uso en la industria editorial. En 1986, bajo la dirección de Charles Goldfarb, investigador de IBM, se
+              creó el
+              SGML (Standard Generalized Markup Language), una norma extraordinariamente compleja y publicada como norma
+              ISO 8879
+              en 1986.</p>
+
+            <p>En 1989, Tim Berners-Lee se basó en la sintaxis del SGML para crear el HTML, el lenguaje de marcas de la
+              web.
+              Inicialmente pensada para su uso en el laboratorio europeo CERN, la web se extendió por todo el planeta de
+              una forma
+              fulminante. Para tutelar el crecimiento y organización de la web, en 1994 se creó el W3C, un organismo
+              internacional formado por empresas, instituciones e investigadores.</p>
+
+            <p>El primer trabajo del W3C fue normalizar el HTML, incorporando las novedades que aparecían continuamente
+              en los
+              navegadores. Pese a ello, el crecimiento de la web seguía aumentado las presiones para ampliar el HTML
+              para todo
+              tipo de usos. El W3C decidió que la solución no podía ser seguir ampliando el HTML, sino crear unas reglas
+              generales
+              para que cualquiera pudiera crear lenguajes de marcas adecuados a sus necesidades, pero manteniendo unas
+              estructuras y sintaxis comunes que permitieran compatibilizarlos y tratarlos con las mismas herramientas.
+              Ese
+              conjunto de reglas es el XML (eXtensible Markup Language = Lenguaje de Marcas Extensible), cuya primera
+              versión se
+              publicó en 1998. Así, el XML no es un lenguaje de marcas, pero sí la base común elegida por el W3C para
+              sus
+              desarrollos posteriores.</p>
+
+            <p>En los primeros años del siglo XXI el W3C planteó una triple línea de trabajo:</p>
+
+            <ol>
+              <li>Desarrollar el XML, creando todo tipo de tecnologías para procesar documentos XML que pudieran
+                aplicarse a
+                cualquier lenguaje de marcas basado en XML.</li><br>
+              <li>Como el HTML de los años 90 no cumplía las normas del XML ya que el HTML era anterior al XML, el W3C
+                aprobó en
+                el año 2000 el XHTML, una versión del HTML que sí que cumplía las reglas del XML, poniendo fin al
+                desarrollo del
+                HTML.</li><br>
+              <li>Poner en marcha la iniciativa de la Web semántica para dotar de "inteligencia" a la web, basándose en
+                el XML.
+              </li>
+            </ol>
+
+            <p>Veinte años después, este ambicioso plan ha fracasado. Aunque el W3C cumplió su parte elaborando y
+              aprobando decenas
+              de recomendaciones en esas tres líneas de trabajo, el mercado no las ha adoptado, especialmente en la web.
+            </p>
+
+            <p>Para empezar, los fabricantes de navegadores no aceptaron el XHTML y crearon en 2004 una nueva
+              organización, el
+              WHATWG, para continuar el desarrollo del HTML que el W3C había abandonado. En 2007 el W3C reconoció su
+              fracaso y
+              retomó el desarrollo del HTML (incluyendo en él una versión XHTML, basada en XML). En octubre de 2014 el
+              W3C
+              publicó la recomendación HTML 5, que incluye las dos variantes: HTML 5, no basada en XML, y XHTML 5,
+              basada en XML
+              (una tercera variante, llamada HTML políglota ha sido abandonada). Desde entonces se han ido publicando
+              versiones
+              actualizadas del HTML 5, pero realmente el desarrollo del HTML ya no se hace en el seno del W3C, sino en
+              el
+              WHATWG.</p>
+
+            <p>Por otro lado, aunque por unos años el XML se convirtió en la herramienta básica para el intercambio y
+              almacenamiento de información en muchos sectores de la informática, poco a poco el mercado ha ido
+              evolucionando en
+              otras direcciones, empleando tecnologías más sencillas no basadas en el XML.</p>
+
+            <p>Para terminar, la iniciativa de la Web semántica (aún suponiendo que hubiera propuesto las tecnologías
+              adecuadas
+              para permitir el procesamiento inteligente de la información contenida en las páginas web) no ha tenido la
+              menor
+              oportunidad de éxito, puesto que la web no adoptó ninguno de los componentes de la web semántica.</p>
+
+            <p>Reconociendo el fracaso, en 2013 el W3C ya había cerrado prácticamente todos los grupos de trabajo
+              dedicados a la
+              web semántica y en 2018 el W3C también ha cerrado prácticamente todos los grupos de trabajo dedicados al
+              XML.
+              Probablemente el principal motivo del fracaso sea que el XML, con su exigencia de ausencia de errores en
+              los
+              documentos, es demasiado estricto para una web que en gran parte todavía se elabora manualmente.</p>
+
+            <p>Pero aunque la web haya abandonado el XML, el XML se sigue utilizando en muchos ámbitos especializados
+              para el
+              almacenamiento y transmisión de la información, por lo que cuesta creer que su desarrollo en esos ámbitos
+              no sea
+              retomado, dentro o fuera del W3C, en los próximos años.</p><br>
+
+            <!-- Objetivos de XML -->
+            <h3>Objetivos de XML:</h3><br><br>
+            <p>El XML se creó para que cumpliera varios objetivos.</p>
+
+            <ol>
+              <li>Que fuera idéntico a la hora de servir, recibir y procesar la información que el HTML, para aprovechar
+                toda la
+                tecnología implantada para este último.</li><br>
+              <li>Que fuera formal y conciso desde el punto de vista de los datos y la manera de guardarlos.</li><br>
+              <li>Que fuera extensible, para que lo puedan utilizar en todos los campos del conocimiento.</li><br>
+              <li>Que fuese fácil de leer y editar.</li><br>
+              <li>Que fuese fácil de implantar, programar y aplicar a los distintos sistemas.</li>
+            </ol>
+
+            <p>El XML se puede usar para infinidad de trabajos y aporta muchas ventajas en amplios escenarios. Veamos
+              algunas
+              ventajas del XML en algunos campos prácticos.</p>
+
+            <ul>
+              <li><strong>Comunicación de datos:</strong> Si la información se transfiere en XML, cualquier aplicación
+                podría
+                escribir un documento de texto plano con los datos que estaba manejando en formato XML y otra aplicación
+                recibir
+                esta información y trabajar con ella.</li><br>
+              <li><strong>Migración de datos:</strong> Si tenemos que mover los datos de una base de datos a otra sería
+                muy sencillo
+                si las dos trabajasen en formato XML.</li><br>
+              <li><strong>Aplicaciones web:</strong> Hasta ahora cada navegador interpreta la información a su manera y
+                los
+                programadores del web tenemos que hacer unas cosas u otras en función del navegador del usuario. Con XML
+                tenemos
+                una sola aplicación que maneja los datos y para cada navegador o soporte podremos tener una hoja de
+                estilo o
+                similar para aplicarle el estilo adecuado. Si mañana nuestra aplicación debe correr en WAP solo tenemos
+                que
+                crear una nueva hoja de estilo o similar.</li>
+            </ul>
+
+            <br>
+
+            <!-- Normas de Uso -->
+            <h3>Normas de Uso:</h3><br><br>
+            <p>En un documento XML, todos los nombres de los elementos son case sensitive, es decir, sensibles a letras
+              minúsculas
+              y mayúsculas, teniendo que cumplir las siguientes normas:</p>
+
+            <ul>
+              <li>Pueden contener letras minúsculas, letras mayúsculas, números, puntos ".", guiones medios "-" y
+                guiones bajos
+                "_".</li><br>
+              <li>Asimismo, pueden contener el carácter dos puntos ":". No obstante, su uso se reserva para cuando se
+                definan
+                espacios de nombres.</li><br>
+              <li>El primer carácter tiene que ser una letra o un guion bajo "_".</li>
+            </ul>
+
+            <p>Por otra parte, hay que tener en cuenta que, detrás del nombre de una etiqueta se permite escribir un
+              espacio en
+              blanco o un salto de línea. Por ejemplo, sintácticamente es correcto escribir:</p>
+
+            <pre class="codigo"><code>
+ &lt;Ciudad &gt;Pamplona&lt;/Ciudad
+&gt;
+                              </code></pre>
+
+            <p>Ahora bien, no puede haber un salto de línea o un espacio en blanco antes del nombre de una etiqueta:</p>
+
+            <pre class="codigo"><code>
+&lt;
+Ciudad&gt;Pamplona&lt;/Ciudad&gt;
+                              </code></pre>
+
+            <p><strong>EJEMPLO</strong> Los siguientes elementos no están escritos correctamente por incumplir alguna
+              regla de
+              sintaxis:</p>
+
+            <pre class="codigo"><code>
+&lt;Ciudad&gt;Pamplona&lt;/ciudad&gt;
+
+&lt;día&gt;18&lt;/dia&gt;
+
+&lt;mes&gt;6&lt;mes/&gt;
+
+&lt;ciudad&gt;Pamplona&lt;/finciudad&gt;
+
+&lt;_rojo&gt;
+
+&lt;2colores&gt;Rojo y Naranja&lt;/2colores&gt;
+
+&lt; Aficiones &gt;Cine, Bailar, Nadar&lt;/ Aficiones &gt;
+
+&lt;persona&gt;&lt;nombre&gt;Elsa&lt;/persona&gt;&lt;/nombre&gt;
+
+&lt;color favorito&gt;azul&lt;/color favorito&gt;
+                              </code></pre>
+
+            <p>En su lugar, sería correcto escribir:</p>
+
+            <pre class="codigo"><code>
+&lt;Ciudad&gt;Pamplona&lt;/Ciudad&gt;
+
+&lt;día&gt;18&lt;/día&gt;
+                            
+&lt;mes&gt;6&lt;/mes&gt;
+                            
+&lt;ciudad&gt;Pamplona&lt;/finciudad&gt;
+                            
+&lt;_rojo/&gt;
+                            
+&lt;2colores&gt;Rojo y Naranja&lt;/2colores&gt;
+                            
+&lt;Aficiones &gt;Cine, Bailar, Nadar&lt;/ Aficiones &gt;
+                            
+&lt;persona&gt;&lt;nombre&gt;Elsa&lt;/nombre&gt;&lt;/persona&gt;
+                            
+&lt;color_favorito&gt;azul&lt;/color_favorito&gt;
+                              </code></pre>
+
+            <p>Las letras no inglesas (á, Á, ñ, Ñ...) están permitidas. Sin embargo, es recomendable no utilizarlas para
+              reducir
+              posibles incompatibilidades con programas que puedan no reconocerlas.</p>
+
+            <p>En cuanto al carácter guion medio "-" y al punto ".", aunque también están permitidos para nombrar
+              etiquetas,
+              igualmente se aconseja evitar su uso; el guion medio porque podría confundirse con el signo menos, y el
+              punto
+              porque, por ejemplo al escribir color.favorito, podría interpretarse que favorito es una propiedad del
+              objeto
+              color.</p><br>
+
+            <!-- Aplicaciones en el Ámbito Empresarial -->
+            <h3>Aplicaciones en el Ámbito Empresarial:</h3><br>
+
+            <p>En el acelerado entorno empresarial moderno, la gestión eficiente de datos es crucial para el éxito y la
+              competitividad de una organización. En este contexto, el lenguaje de marcas extensible, o XML (Extensible
+              Markup Language), ha emergido como una herramienta fundamental que ha transformado la forma en que las
+              empresas manejan, intercambian y estructuran datos. </p>
+
+            <p>Estructuración y Organización de Datos:</p>
+
+            <p>XML, diseñado para ser legible tanto por humanos como por máquinas, proporciona una forma flexible y
+              poderosa de estructurar datos. En el entorno empresarial, donde la información proviene de diversas
+              fuentes y en diferentes formatos, XML actúa como un estándar para la representación y organización de
+              datos. La capacidad de definir etiquetas personalizadas permite a las empresas crear estructuras
+              jerárquicas que reflejan con precisión la naturaleza compleja de su información.</p>
+
+            <p>Intercambio de Datos y Colaboración:</p>
+
+            <p>Una de las aplicaciones más destacadas de XML en el ámbito empresarial es su papel en el intercambio de
+              datos entre sistemas heterogéneos. Al adoptar un formato estandarizado como XML, las organizaciones pueden
+              superar barreras de incompatibilidad y facilitar la colaboración entre diferentes plataformas y
+              aplicaciones. XML actúa como un puente que conecta sistemas diversos, permitiendo una transferencia de
+              datos fluida y eficiente.</p>
+
+            <p>Representación de Documentos:</p>
+
+            <p>XML no solo se limita a datos estructurados, sino que también se utiliza ampliamente para representar
+              documentos completos. En el ámbito empresarial, esta capacidad se traduce en la creación de documentos
+              estandarizados que contienen información vital. Contratos, informes, facturas y otros documentos pueden
+              ser codificados en XML, lo que facilita su almacenamiento, búsqueda y recuperación.</p>
+
+            <p>Facilitador de la Integración Empresarial:</p>
+
+            <p>La integración de sistemas y aplicaciones es un desafío común en entornos empresariales complejos. XML
+              actúa como un facilitador esencial al proporcionar un formato neutral que puede ser interpretado por una
+              variedad de plataformas y lenguajes de programación. Los servicios web basados en XML permiten la
+              comunicación entre sistemas distribuidos, simplificando la integración y mejorando la eficiencia
+              operativa.</p>
+
+            <p>Desafíos Asociados:</p>
+
+            <p>Aunque XML ofrece numerosos beneficios, su implementación no está exenta de desafíos. Uno de los aspectos
+              críticos es la necesidad de gestionar grandes volúmenes de datos. A medida que las empresas acumulan
+              cantidades masivas de información, la eficiencia en el manejo y procesamiento de archivos XML se convierte
+              en un factor crucial.</p>
+
+            <p>La complejidad de las estructuras XML también puede presentar desafíos, especialmente cuando se trabaja
+              con esquemas extensos. La definición cuidadosa de esquemas y la gestión de versiones son aspectos
+              esenciales para garantizar la coherencia y la interoperabilidad a medida que evolucionan los sistemas.</p>
+
+
+
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-sm-2 sidenav" id="derecho">
+        <div class="well">
+          <img width="180" height="100" src="imagen/video3.gif" alt="promo">
+          <p class="text-center">Anuncia con nosotros</p>
+        </div>
+        <br><br>
+        <div class="well">
+          <img width="180" height="100" src="imagen/video4.gif" alt="promo">
+          <p class="text-center">Anuncia con nosotros</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="container-fluid text-center">
+    <p>Todos los derechos reservados del autor @Camero</p>
+  </footer>
+
+</body>
+
+</html>
